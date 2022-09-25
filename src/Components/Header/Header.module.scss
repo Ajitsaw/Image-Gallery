@@ -1,0 +1,65 @@
+// Variables
+$primary: #454545;
+$blue: #2879fe;
+$pink: #ff497c;
+
+header {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #f9fbff;
+    box-shadow: 0 0 10px rgb(200, 200, 150, 0.1);
+    @media (max-width: 767px) {
+        padding: 10px 0;
+    }
+    .logo {
+        color: $blue;
+        font-size: 24px;
+        line-height: 1;
+        display: flex;
+        font-weight: 400;
+        text-transform: uppercase;
+        @media (max-width: 991px) {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        svg {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 30px;
+        color: $blue;
+        cursor: pointer;
+        position: relative;
+        .searchBox {
+            margin-right: 20px;
+            display: block;
+            @media (min-width: 992px) {
+                display: none;
+            }
+            &__holder {
+                position: fixed;
+                width: 100%;
+                left: 0;
+                top: 75px;
+                padding: 20px 50px;
+                background-color: #ebf1ff;
+                display: none;
+                &.active {
+                    display: block;
+                }
+                @media (max-width: 767px) {
+                    top: 65px;
+                    padding: 15px 25px;
+                }
+            }
+        }
+    }
+}

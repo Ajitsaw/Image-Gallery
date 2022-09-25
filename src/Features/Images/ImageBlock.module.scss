@@ -1,0 +1,132 @@
+// Variables
+$primary: #333;
+$blue: #2879fe;
+$pink: #ff497c;
+
+.imageblock {
+    padding: 10px 0 100px;
+    @media (max-width: 991px) {
+        padding: 10px 0 50px;
+    }
+}
+.single {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column;
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
+    }
+    &:hover {
+        .image {
+            .hover {
+                transition: all 0.3s ease;
+                bottom: 30px;
+            }
+        }
+    }
+    .image {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        .view {
+            position: absolute;
+            top: 0;
+            background: $blue;
+            padding: 7px 13px;
+            color: #fff;
+            font-weight: 500;
+            border-radius: 0 0 5px;
+            font-size: 13px;
+            text-transform: uppercase;
+            svg {
+                margin-right: 5px;
+            }
+        }
+        .hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -50%;
+            transition: all 0.3s ease;
+            .button {
+                border-radius: 6px;
+                line-height: 1.5;
+                background-color: $pink;
+                color: #fff;
+                font-weight: 500;
+                display: inline-block;
+                padding: 12px 12px;
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                z-index: 1;
+                cursor: pointer;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+                &:hover {
+                    transform: scale(1.05);
+                    transition: all 0.3s ease-in-out;
+                    color: #fff;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .text {
+        padding: 15px 15px;
+        font-size: 14px;
+        p {
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+    }
+}
+.col-lg-3 {
+    margin-bottom: 30px;
+}
+
+.error {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 30px;
+    text-align: center;
+    font-weight: 600;
+    @media (max-width: 1200px) {
+        max-width: 300px;
+    }
+    @media (max-width: 767px) {
+        max-width: 200px;
+    }
+    @media (max-width: 575px) {
+        max-width: 150px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.loader {
+    text-align: center;
+    img {
+        max-width: 500px;
+        @media (max-width: 991px) {
+            max-width: 300px;
+        }
+        @media (max-width: 767px) {
+            max-width: 200px;
+        }
+    }
+}

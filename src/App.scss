@@ -1,0 +1,90 @@
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap");
+
+// Variables
+$primary: #333;
+$blue: #2879fe;
+$pink: #ff497c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: $primary;
+    overflow-x: hidden;
+    padding-top: 100px;
+    @media (max-width: 991px) {
+        padding-top: 80px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 70px;
+    }
+}
+
+a,
+a:hover,
+a:focus {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 200px;
+    @media (max-width: 1600px) {
+        padding: 0 100px;
+    }
+    @media (max-width: 1400px) {
+        padding: 0 80px;
+    }
+    @media (max-width: 1200px) {
+        padding: 0 50px;
+    }
+    @media (max-width: 800px) {
+        padding: 0 25px;
+    }
+}
+
+.button {
+    border-radius: 6px;
+    line-height: 1.5;
+    background-color: $blue;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 16px 38px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    @media (max-width: 1400px) {
+        padding: 12px 38px;
+    }
+    @media (max-width: 767px) {
+        padding: 10px 28px;
+        font-size: 14px;
+    }
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        color: #fff;
+    }
+    &.button__pink {
+        background-color: $pink;
+    }
+}
