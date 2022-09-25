@@ -1,7 +1,7 @@
 # Image Gallery (React App, Redux Js)
 
 ## Live Url
-
+https://ajitsaw.github.io/Image-Gallery/
 
 ## What is the use of this Repo
 
