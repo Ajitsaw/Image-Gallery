@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ajitsaw/Image-Gallery/static/css/main.8b754d1c.css",
+    "main.js": "/Ajitsaw/Image-Gallery/static/js/main.f3b31eb8.js",
+    "index.html": "/Ajitsaw/Image-Gallery/index.html",
+    "main.8b754d1c.css.map": "/Ajitsaw/Image-Gallery/static/css/main.8b754d1c.css.map",
+    "main.f3b31eb8.js.map": "/Ajitsaw/Image-Gallery/static/js/main.f3b31eb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b754d1c.css",
+    "static/js/main.f3b31eb8.js"
+  ]
+}
