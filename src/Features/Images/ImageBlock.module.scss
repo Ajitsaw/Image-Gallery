@@ -8,23 +8,30 @@ $pink: #ff497c;
     @media (max-width: 991px) {
         padding: 10px 0 50px;
     }
+    .marg {
+        margin-bottom: 30px;
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
+    }
 }
 .single {
     background: #fff;
     overflow: hidden;
     box-shadow: 0 0 5px rgb(0 0 0 / 10%);
     border-radius: 5px;
-    margin-bottom: 30px;
+    height: 100%;
     display: flex;
     flex-flow: column;
-    @media (max-width: 991px) {
-        margin-bottom: 20px;
-    }
     &:hover {
         .image {
             .hover {
                 transition: all 0.3s ease;
                 bottom: 30px;
+                @media (max-width: 991px) {
+                    bottom: auto;
+                    top: 0;
+                }
             }
         }
     }
@@ -56,8 +63,14 @@ $pink: #ff497c;
             right: 0;
             bottom: -50%;
             transition: all 0.3s ease;
+            @media (max-width: 991px) {
+                left: auto;
+                right: 0;
+                bottom: auto;
+                top: 0;
+            }
             .button {
-                border-radius: 6px;
+                border-radius: 5px;
                 line-height: 1.5;
                 background-color: $pink;
                 color: #fff;
@@ -68,9 +81,16 @@ $pink: #ff497c;
                 transition: all 0.3s ease-in-out;
                 z-index: 1;
                 cursor: pointer;
+                @media (max-width: 991px) {
+                    padding: 10px 10px;
+                }
                 svg {
                     width: 25px;
                     height: 25px;
+                    @media (max-width: 991px) {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
                 &:hover {
                     transform: scale(1.05);
@@ -88,14 +108,16 @@ $pink: #ff497c;
     .text {
         padding: 15px 15px;
         font-size: 14px;
+        display: flex;
+        flex-flow: column;
+        flex: 1;
         p {
             text-transform: capitalize;
             margin-bottom: 10px;
+            font-weight: 500;
+            flex: 1;
         }
     }
-}
-.col-lg-3 {
-    margin-bottom: 30px;
 }
 
 .error {

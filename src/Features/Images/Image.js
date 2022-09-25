@@ -18,7 +18,7 @@ function Image({ content }) {
     const dispatch = useDispatch();
 
     return (
-        <Col lg="3" md="4" sm="6">
+        <Col lg="3" md="4" sm="6" className={style.marg}>
             <div className={style.single}>
                 <div className={style.image}>
                     <img src={content.largeImageURL} alt={content.user_id} />

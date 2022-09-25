@@ -36,7 +36,7 @@ function ImageBlock() {
                                 src="https://cdn.dribbble.com/users/1665077/screenshots/10738715/media/90712c2d7fd869e9d7586a108024d62c.gif"
                                 alt="gif"
                             />
-                            There is no image found
+                            No image found
                         </div>
                     ) : (
                         images?.map((item) => (

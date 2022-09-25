@@ -51,17 +51,26 @@ $pink: #ff497c;
             max-width: 500px;
         }
         @media (max-width: 800px) {
-            max-width: 90%;
+            max-width: 80%;
             overflow-y: scroll;
         }
         @media (max-width: 575px) {
+            max-width: 90%;
             padding: 0;
         }
         .image {
             position: relative;
             img {
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
                 max-height: 50vh;
+                @media (max-width: 1400px) {
+                    max-height: 45vh;
+                }
+                @media (max-width: 800px) {
+                    max-height: 50vh;
+                }
             }
             .close {
                 position: absolute;
@@ -103,6 +112,11 @@ $pink: #ff497c;
                     @media (max-width: 1400px) {
                         width: 30px;
                         height: 30px;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
                     span {
                         margin: 0 10px;
