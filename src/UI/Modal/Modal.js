@@ -13,7 +13,6 @@ import {
     AiOutlineCloudDownload,
 } from "react-icons/ai";
 
-// Modal Action
 import { removeModal } from "../../Features/Images/imageSlice";
 
 function Modal() {
